@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+  gap: 16px;
+}
+
+.container > div {
+  flex: 0.5;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  height: 50vh;
+  cursor: pointer;
+  transition: flex-grow 0.8s cubic-bezier(.25,.4,.45.1.4);
+}
+
+.container > div:hover {
+  flex-grow: 5;
+}
